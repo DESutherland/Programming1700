@@ -3,7 +3,7 @@ Name: Evan Sutherland W0443868
 Date: 11/17/2020
 Description: Part One Assignment Three for PROG1700
 #>
-
+# Using arrays, for loops, if statements to take user input to determine prize winners
 #This function determines the average of all the boxes sold
 function Show-Average($InBoxes)
 {
@@ -43,8 +43,7 @@ function Get-Prizes($InAverage, $InGuides, $InSold)
 }
 
 
-
-# RENAME FUNCTION: Change the name of the function to match the file name for now.*
+# Main Function
 function Show-Cookies {
 # This validates that a number is enter to determine how many guides have sold cookies
     $guidesAsString = "0"
@@ -106,8 +105,7 @@ function Show-Cookies {
 
 if ($MyInvocation.InvocationName -ne '.')
 {
-    # EDIT: Trigger our main function to launch the program by using the name of the function above
+    # Trigger main function
     Show-Cookies
 }
 
-# * In IT, square brackets in an example generally mean they should be replaced along with text inside
