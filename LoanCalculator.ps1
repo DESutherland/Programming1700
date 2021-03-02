@@ -4,7 +4,7 @@ Date: 09/26/2020
 Description: Part two Assignment one for Prog1700
 #>
 
-# RENAME FUNCTION: Change the name of the function to match the file name for now.*
+# A simple loan calculator
 function Get-WeeklyPayment {
     
     #BANNER
@@ -48,8 +48,7 @@ function Get-WeeklyPayment {
 
 if ($MyInvocation.InvocationName -ne '.')
 {
-    # EDIT: Trigger our main function to launch the program by using the name of the function above
+   
     Get-WeeklyPayment
 }
 
-# * In IT, square brackets in an example generally mean they should be replaced along with text inside
