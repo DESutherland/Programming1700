@@ -4,7 +4,8 @@ Evan Sutherland W0443868
 Assignment 5 PROG 1700
 #>
 
-# RENAME FUNCTION: Change the name of the function to match the file name for now.*
+# Using a public API to take user input to give the user a selection of DnD5e mosters and there full list of stats.
+# Main Function
 function Get-DnD5e {
 
     # Pulls from DnD5e Monsters API
@@ -16,7 +17,7 @@ function Get-DnD5e {
     # Prompts for user input and does validation ********Need to add validation************
     Write-Output "Welcome to the DnD 5e Monster Selector!"
     Write-Output ("=" * 60)
-    Write-Output "Please enter the name of the monst you would like information on, or leave blank and press enter to select from the full list of monsters"
+    Write-Output "Please enter the name of the monster you would like information on, or leave blank and press enter to select from the full list of monsters"
     Write-Output "If your selection does not match a name from the list you will be prompted to select from the full list of monsters"
     Write-Output ("=" * 60)
     $userInput = Read-Host "Enter monster name here (Please use only Upper and lower case letters, no numbers or special characters)"
@@ -73,8 +74,7 @@ function Get-DnD5e {
 
 if ($MyInvocation.InvocationName -ne '.')
 {
-    # EDIT: Trigger our main function to launch the program by using the name of the function above
+    # Trigger main function
     Get-DnD5e
 }
 
-# * In IT, square brackets in an example generally mean they should be replaced along with text inside
