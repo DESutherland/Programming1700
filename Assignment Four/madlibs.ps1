@@ -4,6 +4,8 @@ Evan Sutherland W0443868
 Assignment 4 Program 2 PROG1700
 #>
 
+# Mad libs program taking choices from 2 input files and user input. Uses previously learned concepts and adding in use of REGEX. Needs story file and choices 
+# file to run properly
 #This function serves to replace the specific sections in the story with the users inputted selection
 function Get-Selections($InSelections, $InStory)
 {
@@ -24,7 +26,7 @@ function Get-Selections($InSelections, $InStory)
 }
 
 
-# RENAME FUNCTION: Change the name of the function to match the file name for now.*
+# Main Function
 function Show-Madlib {
     #Input the story file and the choices file, set headers for choices and convert it to a csv
     $headers = "Description", "A", "B", "C", "D", "E"
@@ -93,8 +95,7 @@ function Show-Madlib {
 
 if ($MyInvocation.InvocationName -ne '.')
 {
-    # EDIT: Trigger our main function to launch the program by using the name of the function above
+    # Trigger main function
     Show-Madlib
 }
 
-# * In IT, square brackets in an example generally mean they should be replaced along with text inside
