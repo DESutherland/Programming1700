@@ -4,6 +4,7 @@ Date: 10/23/2020
 Description: Part Three Assignment Two for Prog1700
 #>
 
+# A program for determining insurance rates based off user input. Learning the use of if statements
 # This function determines the customers gender and stores it for future use
 function Select-Gender($InGender)
 {
@@ -74,7 +75,7 @@ function Get-Cost($InCost, $InCustGender, $InBracket)
     }
   
 }
-# RENAME FUNCTION: Change the name of the function to match the file name for now.*
+# Main Function
 function Get-InsuranceCost {
 
     # INPUT AND VARIABLES
@@ -96,10 +97,10 @@ function Get-InsuranceCost {
     Write-Output ("Your monthly insurance will be {0:C}" -f $finalCost)
 }
 
+# Trigger main function
 if ($MyInvocation.InvocationName -ne '.')
 {
-    # EDIT: Trigger our main function to launch the program by using the name of the function above
+  
     Get-InsuranceCost
 }
 
-# * In IT, square brackets in an example generally mean they should be replaced along with text inside
