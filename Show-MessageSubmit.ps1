@@ -3,6 +3,8 @@ Name: Evan Sutherland W0443868
 Date: 11/16/2020
 Description: Part Two Assignment Three for PROG1700
 #>
+# Taking a user inputted message along with user inputted letters to redact, looping through the message and redacting the proper letters
+# Outputting the redacted message along with a count of all letter redacted. Learning the use of nested for loops and input validation.
 
 # This function loops through the inputted phrase and compares it to the inputted letters to redact. If a letter matches it gets replaced with an _
 function Get-RedactedLetters($InMessage, $InRedacted) 
@@ -37,7 +39,7 @@ function Get-NumbersRedacted($InFullMessage)
     return $charCount
 }
 
-# RENAME FUNCTION: Change the name of the function to match the file name for now.*
+# Main function
 function Show-Message {
 
     # INPUT
@@ -85,8 +87,7 @@ function Show-Message {
 
 if ($MyInvocation.InvocationName -ne '.')
 {
-    # EDIT: Trigger our main function to launch the program by using the name of the function above
+    # Trigger main function
     Show-Message
 }
 
-# * In IT, square brackets in an example generally mean they should be replaced along with text inside
